@@ -39,7 +39,7 @@ function App() {
           <About />
         </section>
         <section id="skills" className="min-h-screen snap-start">
-          <Skills />
+          <Skills showParticles={showParticles} />
         </section>
         <section id="projects" className="min-h-screen snap-start">
           <Projects showParticles={showParticles} />

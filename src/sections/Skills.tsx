@@ -28,7 +28,7 @@ export const Skills = ({ showParticles }: { showParticles: boolean }) => {
   return (
     <section id="skills" className="relative w-full min-h-screen">
       {/* Background image */}
-      <div className="absolute inset-0 -z-30 bg-svg " />
+      <div className="absolute inset-0 z-0 bg-svg " />
 
       {/* Particles */}
       {showParticles && (
@@ -52,7 +52,7 @@ export const Skills = ({ showParticles }: { showParticles: boolean }) => {
             },
             "retina_detect": true
           }}
-          className="fixed top-0 left-0 w-full h-full -z-10"
+          className="absolute inset-0 z-10 pointer-events-none"
         />
       )}
 
