@@ -16,7 +16,7 @@ export const Projects = ({ showParticles }: { showParticles: boolean }) => {
 
   return (
     <section id="projects" className="relative h-full w-full ">
-        <div className="absolute inset-0 -z-20 bg-[url('../public/backg.png')] bg-cover bg-center min-h-screen" />
+        <div className="absolute inset-0 -z-20 bg-[url('../backg.png')] bg-cover bg-center min-h-screen" />
       {showParticles && (
         <Particles
           id="tsparticles"
@@ -137,7 +137,7 @@ export const Projects = ({ showParticles }: { showParticles: boolean }) => {
       )}
       <div className="flex flex-col justify-center items-center">
         <div className="text-5xl text-white font-bold items-center pt-14 underline decoration-purple-950  underline-offset-15 py-7">Projects</div>
-        <div className="flex flex-wrap justify-center w-full max-w-6xl">
+        <div className="flex flex-wrap justify-center w-full max-w-6xl z-10">
            <div className="w-1/3 p-4"><ProjectCard image={"./paytm.png"} title={"Paytm-Clone"} link="https://github.com/jaya-jha12/paytm-clone.git" tags={["React","MongoDB","Express","Node.js"]}/></div>
            <div className="w-1/3 p-4"><ProjectCard image={"./stripe.png"} title={"Payment-integration"} link="https://github.com/jaya-jha12/payment_backend.git" tags={["Express","Node.js","Stripe"]}/></div>
            <div className="w-1/3 p-4"><ProjectCard image={"./chatbot.png"} title={"Chatbot Frontend"} link="https://github.com/jaya-jha12/chatbot_frontend.git" tags={["Spline","React","Supabase","JavaScript"]}/></div>
