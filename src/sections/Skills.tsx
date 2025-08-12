@@ -10,52 +10,15 @@ import react from '../assets/react.svg';
 import mongo from '../assets/mongo.png';
 import postgress from '../assets/postgress.png';
 
-import { useCallback } from "react";
-import Particles from "react-tsparticles";
-import type { Container, Engine } from "tsparticles-engine";
-import { loadSlim } from "tsparticles-slim";
 
-export const Skills = ({ showParticles }: { showParticles: boolean }) => {
-  const particlesInit = useCallback(async (engine: Engine) => {
-    console.log(engine);
-    await loadSlim(engine);
-  }, []);
 
-  const particlesLoaded = useCallback(async (container: Container | undefined) => {
-    console.log(container);
-  }, []);
+export const Skills = () => {
+  
 
   return (
     <section id="skills" className="relative w-full min-h-screen">
       {/* Background image */}
       <div className="absolute inset-0 z-0 bg-svg " />
-
-      {/* Particles */}
-      {showParticles && (
-        <Particles
-          id="tsparticles"
-          init={particlesInit}
-          loaded={particlesLoaded}
-          options={{
-            "particles": {
-              "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
-              "color": { "value": "#dae4ed" },
-              "shape": { "type": "circle" },
-              "opacity": { "value": 0.5 },
-              "size": { "value": 2, "random": true },
-              "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 },
-              "move": { "enable": true, "speed": 1, "out_mode": "bounce" }
-            },
-            "interactivity": {
-              "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true },
-              "modes": { "repulse": { "distance": 70, "duration": 0.4 }, "push": { "particles_nb": 4 } }
-            },
-            "retina_detect": true
-          }}
-          className="absolute inset-0 z-10 pointer-events-none"
-        />
-      )}
-
       {/* Content */}
       <div className="relative z-20 flex flex-col items-center w-full">
         <div className="flex justify-center mb-10 w-full">

@@ -32,19 +32,19 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <div className="min-h-screen  overflow-y-auto snap-y snap-mandatory scroll-smooth">
-        <section id="home" className="min-h-screen snap-start">
+        <section id="home" className="min-h-screen snap-start -z-10">
           <Home />
         </section>
-        <section id="about" className="h-screen snap-start">
+        <section id="about" className="h-screen snap-start -z-10">
           <About />
         </section>
-        <section id="skills" className="min-h-screen snap-start">
-          <Skills showParticles={showParticles} />
+        <section id="skills" className="min-h-screen snap-start -z-20">
+          <Skills />
         </section>
-        <section id="projects" className="min-h-screen snap-start">
+        <section id="projects" className="min-h-screen snap-start -z-30">
           <Projects showParticles={showParticles} />
         </section>
-        <section id="contact" className=" snap-start">
+        <section id="contact" className=" snap-start z-10">
           <Contact />
         </section>
       </div>

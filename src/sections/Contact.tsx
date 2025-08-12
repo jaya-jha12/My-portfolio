@@ -3,8 +3,8 @@ import {FaGithub, FaLinkedin,FaEnvelope} from "react-icons/fa"
 
 export const Contact=()=>{
     return (
-        <footer id="contact" className="bg-black text-white py-12">
-            <div className="container mx-auto text-center">
+        <footer id="contact" className="bg-black text-white py-12 z-10">
+            <div className=" relative z-20 container mx-auto text-center">
                 <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
                 <p className="text-gray-400 mb-8">
                     I'm currently looking for new opportunities. Feel free to reach out!

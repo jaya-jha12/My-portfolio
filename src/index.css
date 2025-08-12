@@ -3,7 +3,7 @@
 .bg-svg {
   background: #2a44c7;
   background: linear-gradient(158deg, rgba(42, 68, 199, 1) 12%, rgba(93, 115, 222, 1) 28%, rgba(190, 81, 194, 1) 53%, rgba(227, 91, 138, 1) 73%, rgba(194, 39, 70, 1) 91%);
-  opacity: 0.7;
+  opacity: 0.9;
 }
 .bg-pro {
   background: #3F5EFB;

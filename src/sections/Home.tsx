@@ -2,6 +2,7 @@ import { Button } from '../components/Button'
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { FaChevronDown } from "react-icons/fa";
+import '../index.css';
 
 
 export const Home=()=>{
@@ -20,7 +21,7 @@ export const Home=()=>{
         document.body.removeChild(link);
     };
 
-    return <div style={{ backgroundImage: "url('/bg3.png')" }} className="  bg-cover bg-center py-25 justify-center items-center text-center flex flex-col  h-screen">
+    return <div style={{ backgroundImage: "url('/bg3.png')" }} className=" bg-center bg-cover py-25 justify-center items-center text-center flex flex-col  h-screen">
         <h1 className="text-7xl font-bold text-white">
             Hi,I'm {""}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-pink-400 to-purple-500 font-bold text-7xl">Jaya Jha</span>
